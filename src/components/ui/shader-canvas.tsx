@@ -27,7 +27,7 @@ const ShaderCanvas: React.FC = () => {
   uniform float iTime;
 
   float random(vec2 st) {
-    return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+    return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 435758.5453123);
   }
 
   float noise(vec2 st) {
@@ -46,9 +46,9 @@ const ShaderCanvas: React.FC = () => {
 
   vec3 getBaseColor(vec2 uv, float time) {
     float noiseValue = noise(vec2(uv.x, time));
-    float distortion = noise(uv + time) * 2.5;
+    float distortion = noise(uv + time) * 1.5;
     uv.x += distortion;
-    uv.y += noise(uv + vec2(time, time)) * 10.1;
+    uv.y += noise(uv + vec2(time, time)) * 15.5;
 
     float gradientFrequency = mix(1.0, 5.0, noiseValue);
     float gradient = fract(uv.x * gradientFrequency + time);
@@ -58,10 +58,10 @@ const ShaderCanvas: React.FC = () => {
     vec3 darkViolet = vec3(0.3, 0.2, 0.9);
     vec3 lightBlue = vec3(0.6, 0.5, 1.0);
 
-    vec3 bigYellow = vec3(0.6, 0.65, .98);
-    vec3 bigOrange = vec3(0.6, 0.25, .92);
-    vec3 littleOrange = vec3(0.2, 0.05, .12);
-    vec3 black = vec3(0.0, 0.0, 0.22);
+    vec3 bigYellow = vec3(0.98, 0.65, .35);
+    vec3 bigOrange = vec3(0.9, 0.55, .22);
+    vec3 littleOrange = vec3(0.8, 0.35, .12);
+    vec3 black = vec3(0.1, 0.05, 0.0);
 
     vec3 color = mix(black, littleOrange, gradient);
     color = mix(color, bigOrange, smoothstep(0.1, 0.8, gradient));
@@ -71,9 +71,9 @@ const ShaderCanvas: React.FC = () => {
   }
 
   float vignette(vec2 uv) {
-    uv = uv * 2.0 - 1.0;
+    uv = uv * 2.1 - 1.0;
     float len = dot(uv, uv);
-    return smoothstep(1.7, 0.2, len);
+    return smoothstep(1.7, 0.5, len);
   }
 
   void main() {
@@ -83,9 +83,9 @@ const ShaderCanvas: React.FC = () => {
     float chromaOffset = (-2.5 + random(vec2(-3.5,1))) / iResolution.x;
 
     vec3 col;
-    col.r = getBaseColor(uv + vec2(chromaOffset, 0.0), time).r;
+    col.r = getBaseColor(uv + vec2(chromaOffset, 0.002), time).r;
     col.g = getBaseColor(uv, time).g;
-    col.b = getBaseColor(uv - vec2(chromaOffset, 0.0), time).b;
+    col.b = getBaseColor(uv - vec2(chromaOffset, 0.002), time).b;
 
     float vig = vignette(uv);
     col *= vig;

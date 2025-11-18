@@ -1,4 +1,4 @@
-import { Heading, HStack, Container, Center, Avatar, Box } from "@chakra-ui/react"
+import { Heading, HStack, Center, Avatar, Box } from "@chakra-ui/react"
 import ShaderCanvas from "../ui/shader-canvas"
 import FadeInWrapper from "../ui/fade_in_wrapper"
 
@@ -8,7 +8,7 @@ const HeroSection = () => {
             <Box top={0} left={0} position="absolute" zIndex={-2} p={4} rounded={0} w="full" h={620} overflow="hidden">
                 <ShaderCanvas />
             </Box>
-            <Box pt={32} textAlign="center" >
+            <Box pt={32} h={620} px={{ base: 4, md: 32 }} textAlign="center" >
                 <FadeInWrapper>
                     <Center pb={4}>
                         <HStack>

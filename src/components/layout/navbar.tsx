@@ -1,6 +1,7 @@
-import { Box, Button, CloseButton, Container, Drawer, HStack, IconButton, Image, Portal, Stack, type DrawerOpenChangeDetails } from "@chakra-ui/react"
+import { Box, Button, CloseButton, Drawer, HStack, IconButton, Image, Portal, Stack, type DrawerOpenChangeDetails } from "@chakra-ui/react"
 import { useState } from "react"
 import { LuGithub, LuLinkedin, LuWaves } from "react-icons/lu"
+import { Link as ScrollLink } from "react-scroll"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -10,8 +11,7 @@ const Navbar = () => {
     }
 
     return (
-
-        <HStack zIndex={2} position="fixed" top={0} left={0} p={4} justify="space-between">
+        <HStack zIndex={2} position="fixed" top={0} left={0} w="full" p={4} justify="space-between">
             <HStack>
                 <Box
                     rounded="full"
@@ -21,7 +21,7 @@ const Navbar = () => {
                     p={2} >
                     <Image mixBlendMode="luminosity" w={{ base: 5, md: 10 }} src="/tn.png" />
                 </Box>
-                <Box opacity={1}>invisible</Box>
+                <Box opacity={0}>invisible</Box>
             </HStack>
             <HStack
                 rounded="full"
@@ -30,9 +30,15 @@ const Navbar = () => {
                 border="1px solid #2225"
                 p={3}
                 hideBelow="md">
-                <Button rounded="full" variant="ghost">Work</Button>
-                <Button rounded="full" variant="ghost">About</Button>
-                <Button rounded="full" variant="ghost">Contact</Button>
+                <ScrollLink to="work" duration={500} offset={-80} smooth>
+                    <Button position="relative" rounded="full" variant="ghost">Work</Button>
+                </ScrollLink>
+                <ScrollLink to="about" duration={500} offset={-80} smooth>
+                    <Button rounded="full" variant="ghost">About</Button>
+                </ScrollLink>
+                <ScrollLink to="contact" duration={500} offset={-80} smooth>
+                    <Button rounded="full" variant="ghost">Contact</Button>
+                </ScrollLink>
             </HStack>
             <HStack
                 backgroundColor="#1115"
