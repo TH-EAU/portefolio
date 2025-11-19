@@ -1,4 +1,5 @@
 import type Work from "@/models/work";
+import MicroMarketSimulator from "@/pages/projects/micromarket-simulator_page";
 
 const workList: Work[] = [
     {
@@ -6,14 +7,16 @@ const workList: Work[] = [
         slug: "micromarket-simulator",
         caption: "/caption.jpg",
         overview: "Micromarket Simulator is a great react-three-fiber game",
-        tags: ["game", "3D", "WebGL"]
+        tags: ["game", "3D", "WebGL"],
+        page: MicroMarketSimulator
     },
     {
         name: "MicromarketSimulator",
         slug: "micromarket-simulator",
         caption: "/caption2.jpg",
         overview: "Micromarket Simulator is a great react-three-fiber game",
-        tags: ["game", "3D", "WebGL"]
+        tags: ["game", "3D", "WebGL"],
+        page: MicroMarketSimulator
     }
 ]
 

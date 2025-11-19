@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/cli": "^3.29.0",
@@ -16,6 +17,7 @@
     "@react-three/fiber": "^9.4.0",
     "@types/three": "^0.181.0",
     "add": "^2.0.6",
+    "gh-pages": "^6.3.0",
     "next-themes": "^0.4.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

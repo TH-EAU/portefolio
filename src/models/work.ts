@@ -4,4 +4,5 @@ export default interface Work {
     caption: string
     overview: string
     tags: string[]
+    page: React.FC
 }

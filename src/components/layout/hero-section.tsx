@@ -18,18 +18,18 @@ const HeroSection = () => {
                 overflow="hidden">
                 <ShaderCanvas />
             </Box>
-            <Box pt={32} h="90vh" px={{ base: 4, md: 32 }} textAlign="center" >
+            <Box pt={32} h="90vh" px={{ base: 4, md: 32, lg: 48 }} textAlign="center" >
                 <FadeInWrapper>
                     <Center pb={4}>
                         <HStack>
-                            <Avatar.Root>
+                            <Avatar.Root size="xl">
                                 <Avatar.Image src="/profile.jpeg" />
                                 <Avatar.Fallback name="Théau Nicolas" />
                             </Avatar.Root>
-                            <Heading fontSize="lg">Théau Nicolas</Heading>
+                            <Heading fontSize="xl">Théau Nicolas</Heading>
                         </HStack>
                     </Center>
-                    <Heading fontSize={{ base: "5xl", md: "7xl" }} fontWeight="normal" letterSpacing={-3} lineHeight={1} >A designer passionate about creating beautiful user friendly products</Heading>
+                    <Heading as="h1" fontSize={{ base: "5xl", md: "7xl", lg: "8xl" }} fontWeight="normal" letterSpacing={-3} lineHeight={1} >A designer passionate about creating beautiful user friendly products</Heading>
                 </FadeInWrapper>
             </Box>
 

@@ -3,7 +3,7 @@ import { useState } from "react"
 import { LuGithub, LuLinkedin, LuWaves } from "react-icons/lu"
 import { Link as ScrollLink } from "react-scroll"
 
-const Navbar = () => {
+const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
     const [open, setOpen] = useState(false)
 
     const handleOpenMobileMenu = (e: DrawerOpenChangeDetails) => {
@@ -27,6 +27,7 @@ const Navbar = () => {
                 <Box opacity={0}>invisible</Box>
             </HStack>
             <HStack
+                display={essential ? "none" : "block"}
                 rounded="full"
                 backgroundColor="#1115"
                 backdropFilter="blur(10px)"
@@ -44,6 +45,7 @@ const Navbar = () => {
                 </ScrollLink>
             </HStack>
             <HStack
+                display={essential ? "none" : "block"}
                 backgroundColor="#1115"
                 backdropFilter="blur(10px)"
                 p={3}
@@ -108,9 +110,15 @@ export default Navbar
 const MobileNavbar = () => {
     return (
         <Stack align="start" >
-            <Button rounded="full" variant="ghost">Work</Button>
-            <Button rounded="full" variant="ghost">About</Button>
-            <Button rounded="full" variant="ghost">Contact</Button>
+            <ScrollLink to="work" duration={500} offset={-80} smooth>
+                <Button rounded="full" variant="ghost">Work</Button>
+            </ScrollLink>
+            <ScrollLink to="about" duration={500} offset={-80} smooth>
+                <Button rounded="full" variant="ghost">About</Button>
+            </ScrollLink>
+            <ScrollLink to="contact" duration={500} offset={-80} smooth>
+                <Button rounded="full" variant="ghost">Contact</Button>
+            </ScrollLink>
         </Stack>
     )
 }

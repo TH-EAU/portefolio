@@ -1,4 +1,4 @@
-import { Box, Container, Grid, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Tag, Text, Link as ChakraLink, Timeline } from "@chakra-ui/react"
+import { Box, Container, Grid, GridItem, Heading, HStack, Image, Stack, Tag, Text, Link as ChakraLink, Timeline } from "@chakra-ui/react"
 import { FaReact } from "react-icons/fa"
 import { FiArrowUpRight } from "react-icons/fi"
 import { LiaProjectDiagramSolid } from "react-icons/lia"
@@ -9,7 +9,6 @@ import { Link } from "react-router"
 const AboutSection = () => {
     return (
         <Box
-
             as="section"
             py={{ base: 12, md: 20 }}
             border="1px solid #2225"
@@ -19,7 +18,6 @@ const AboutSection = () => {
             rounded="3xl"
             mx={4}>
             <Container maxW="5xl">
-
                 <Stack id="about" >
                     <Stack
                         flexDir={{ base: "column", md: "row" }}

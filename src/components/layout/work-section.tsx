@@ -1,5 +1,5 @@
 import workList from "@/assets/works-list"
-import { Box, Container, Heading, Highlight, HStack, SimpleGrid, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
+import { Box, Container, Heading, HStack, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
 import WorkCaptionCard from "./cards/work-card"
 
 
