@@ -241,7 +241,7 @@ const ShaderCanvas: React.FC = () => {
             <canvas
                 ref={canvasRef}
                 className="border border-gray-600 rounded-lg shadow-lg"
-                style={{ width: `100%`, height: '600px' }}
+                style={{ width: `100%`, height: '90vh' }}
             />
         </Box>
 

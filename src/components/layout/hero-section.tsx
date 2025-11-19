@@ -5,10 +5,20 @@ import FadeInWrapper from "../ui/fade_in_wrapper"
 const HeroSection = () => {
     return (
         <>
-            <Box top={0} left={0} position="absolute" zIndex={-2} p={4} rounded={0} w="full" h={620} overflow="hidden">
+            <Box
+                id="home"
+                top={0}
+                left={0}
+                position="absolute"
+                zIndex={-2}
+                p={4}
+                rounded={0}
+                w="full"
+                h="92vh"
+                overflow="hidden">
                 <ShaderCanvas />
             </Box>
-            <Box pt={32} h={620} px={{ base: 4, md: 32 }} textAlign="center" >
+            <Box pt={32} h="90vh" px={{ base: 4, md: 32 }} textAlign="center" >
                 <FadeInWrapper>
                     <Center pb={4}>
                         <HStack>

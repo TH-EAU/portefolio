@@ -33,29 +33,36 @@ const WorkCaptionCard: React.FC<{ work: Work }> = ({ work }) => {
     return (
 
         <Stack gap={4}>
-            <Box
-                overflow="hidden"
-                borderRadius="xl"
-                position="relative"
-            >
-                <Image
-                    src={work.caption}
-                    alt={work.name}
-                    objectFit="cover"
-                    w="full"
-                    h="full"
-                />
-            </Box>
+            <Link to={work.slug} >
+                <Box
+                    overflow="hidden"
+                    borderRadius="xl"
+                    position="relative"
+                    cursor="pointer"
+                    transition="ease .5s"
+                    _hover={{
+                        transform: "scale(1.02)"
+                    }}
+                >
+                    <Image
+                        src={work.caption}
+                        alt={work.name}
+                        objectFit="cover"
+                        w="full"
+                        h="full"
+                    />
+                </Box>
 
-            <Stack gap={1}>
-                <HStack>
-                    <ChakraLink fontSize="md" ><Link to={work.slug} >{work.name}</Link></ChakraLink>
-                    <FiArrowUpRight />
-                </HStack>
-                <Text fontSize="xs" textTransform="uppercase" color="gray.400">
-                    Description
-                </Text>
-            </Stack>
+                <Stack gap={1}>
+                    <HStack>
+                        <ChakraLink as="span" fontSize="md" >{work.name}</ChakraLink>
+                        <FiArrowUpRight />
+                    </HStack>
+                    <Text fontSize="xs" textTransform="uppercase" color="gray.400">
+                        Description
+                    </Text>
+                </Stack>
+            </Link>
         </Stack>
 
     )

@@ -18,8 +18,11 @@ const Navbar = () => {
                     backgroundColor="#1115"
                     backdropFilter="blur(10px)"
                     border="1px solid #2225"
-                    p={2} >
-                    <Image mixBlendMode="luminosity" w={{ base: 5, md: 10 }} src="/tn.png" />
+                    p={2}
+                    cursor="pointer" >
+                    <ScrollLink to="home" duration={500} offset={-80} smooth>
+                        <Image mixBlendMode="difference" w={{ base: 5, md: 10 }} src="/tn_white.png" />
+                    </ScrollLink>
                 </Box>
                 <Box opacity={0}>invisible</Box>
             </HStack>
@@ -48,8 +51,8 @@ const Navbar = () => {
                 overflow="hidden"
                 border="1px solid #2225"
                 hideBelow="md">
-                <IconButton rounded="full" variant="ghost"><LuLinkedin /></IconButton>
-                <IconButton rounded="full" variant="ghost"><LuGithub /></IconButton>
+                <IconButton rounded="full" variant="ghost"><a target="_blank" href="https://www.linkedin.com/in/th%C3%A9au-nicolas/" ><LuLinkedin /></a></IconButton>
+                <IconButton rounded="full" variant="ghost"><a target="_blank" href="https://github.com/TH-EAU" ><LuGithub /></a></IconButton>
             </HStack>
             <Drawer.Root size="full" open={open} onOpenChange={handleOpenMobileMenu} >
                 <Drawer.Trigger asChild>
