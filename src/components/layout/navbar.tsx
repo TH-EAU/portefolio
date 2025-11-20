@@ -21,7 +21,7 @@ const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
                     p={2}
                     cursor="pointer" >
                     <ScrollLink to="home" duration={500} offset={-80} smooth>
-                        <Image mixBlendMode="difference" w={{ base: 5, md: 10 }} src="/tn_white.png" />
+                        <Image mixBlendMode="difference" w={{ base: 5, md: 10 }} src="/portefolio/tn_white.png" />
                     </ScrollLink>
                 </Box>
                 <Box opacity={0}>invisible</Box>
@@ -87,7 +87,7 @@ const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
                                     backdropFilter="blur(10px)"
                                     border="1px solid #2225"
                                     p={2} >
-                                    <Image mixBlendMode="luminosity" w={{ base: 5, md: 10 }} src="/tn.png" />
+                                    <Image mixBlendMode="luminosity" w={{ base: 5, md: 10 }} src="/portefolio/tn.png" />
                                 </Box>
                             </Drawer.Header>
                             <Drawer.Body>

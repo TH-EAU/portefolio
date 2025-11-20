@@ -5,7 +5,7 @@ const workList: Work[] = [
     {
         name: "MicromarketSimulator",
         slug: "micromarket-simulator",
-        caption: "/caption.jpg",
+        caption: "/portefolio/caption.jpg",
         overview: "Micromarket Simulator is a great react-three-fiber game",
         tags: ["game", "3D", "WebGL"],
         page: MicroMarketSimulator
@@ -13,7 +13,7 @@ const workList: Work[] = [
     {
         name: "MicromarketSimulator",
         slug: "micromarket-simulator",
-        caption: "/caption2.jpg",
+        caption: "/portefolio/caption2.jpg",
         overview: "Micromarket Simulator is a great react-three-fiber game",
         tags: ["game", "3D", "WebGL"],
         page: MicroMarketSimulator

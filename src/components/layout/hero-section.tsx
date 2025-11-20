@@ -23,7 +23,7 @@ const HeroSection = () => {
                     <Center pb={4}>
                         <HStack>
                             <Avatar.Root size="xl">
-                                <Avatar.Image src="/profile.jpeg" />
+                                <Avatar.Image src="/portefolio/profile.jpeg" />
                                 <Avatar.Fallback name="Théau Nicolas" />
                             </Avatar.Root>
                             <Heading fontSize="xl">Théau Nicolas</Heading>

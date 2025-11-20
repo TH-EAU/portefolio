@@ -4,7 +4,6 @@ import { FiArrowUpRight } from "react-icons/fi"
 import { LiaProjectDiagramSolid } from "react-icons/lia"
 import { MdSchool } from "react-icons/md"
 import { RiCodeView } from "react-icons/ri"
-import { Link } from "react-router"
 
 const AboutSection = () => {
     return (
@@ -25,7 +24,7 @@ const AboutSection = () => {
                         mb={5}
                         alignItems={{ base: "start", md: "end" }}
                         columns={{ base: 1, md: 2 }}>
-                        <Image rounded="2xl" src="/profile.jpeg" w={250} align="right" />
+                        <Image rounded="2xl" src="/portefolio/profile.jpeg" w={250} align="right" />
                         <Stack gap={4} mb={10}>
                             <HStack align="end">
                                 <Heading fontSize={{ base: "3xl", md: "5xl" }}>About me</Heading>
@@ -36,9 +35,9 @@ const AboutSection = () => {
                             </Text>
                             <HStack color="gray.400" >
                                 <ChakraLink as="span" fontSize="md" color="orange.fg" >
-                                    <Link target="_blank" to="/documents/output.pdf">
+                                    <a target="_blank" href="/portefolio/documents/output.pdf">
                                         View my CV
-                                    </Link>
+                                    </a>
                                 </ChakraLink>
                                 <FiArrowUpRight />
                             </HStack>
@@ -78,7 +77,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/esiea.png" />
+                                            <Image src="/portefolio/esiea.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -95,7 +94,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/lpl.png" />
+                                            <Image src="/portefolio/lpl.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -112,7 +111,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/power.png" />
+                                            <Image src="/portefolio/power.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -129,7 +128,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/psl.png" />
+                                            <Image src="/portefolio/psl.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>

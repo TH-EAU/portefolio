@@ -2,25 +2,16 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { Provider as ChackraProvider } from './components/ui/provider.tsx'
-import { createBrowserRouter, RouterProvider } from 'react-router'
-import MicroMarketSimulator from '@/pages/projects/micromarket-simulator_page.tsx'
 import './index.css'
+import { ColorModeProvider } from './components/ui/color-mode.tsx'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: App,
-  },
-  {
-    path: "/micromarket-simulator",
-    Component: MicroMarketSimulator
-  }
-])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ChackraProvider>
-      <RouterProvider router={router} />
+      <ColorModeProvider forcedTheme='dark' >
+        <App />
+      </ColorModeProvider>
     </ChackraProvider>
   </StrictMode>,
 )
