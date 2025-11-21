@@ -1,6 +1,7 @@
 import { Box, Button, CloseButton, Drawer, HStack, IconButton, Image, Portal, Stack, type DrawerOpenChangeDetails } from "@chakra-ui/react"
 import { useState } from "react"
 import { LuGithub, LuLinkedin, LuWaves } from "react-icons/lu"
+import { MdDarkMode } from "react-icons/md"
 import { Link as ScrollLink } from "react-scroll"
 
 const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
@@ -15,7 +16,7 @@ const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
             <HStack>
                 <Box
                     rounded="full"
-                    backgroundColor="#1115"
+                    backgroundColor={{ base: "#FFFA", _dark: "#1115" }}
                     backdropFilter="blur(10px)"
                     border="1px solid #2225"
                     p={2}
@@ -27,9 +28,10 @@ const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
                 <Box opacity={0}>invisible</Box>
             </HStack>
             <HStack
+
                 display={essential ? "none" : "block"}
                 rounded="full"
-                backgroundColor="#1115"
+                backgroundColor={{ base: "#FFFA", _dark: "#1115" }}
                 backdropFilter="blur(10px)"
                 border="1px solid #2225"
                 p={3}
@@ -46,7 +48,7 @@ const Navbar: React.FC<{ essential?: boolean }> = ({ essential }) => {
             </HStack>
             <HStack
                 display={essential ? "none" : "block"}
-                backgroundColor="#1115"
+                backgroundColor={{ base: "#FFFA", _dark: "#1115" }}
                 backdropFilter="blur(10px)"
                 p={3}
                 rounded="full"

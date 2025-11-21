@@ -33,8 +33,8 @@ const AboutSection = () => {
                             <Text>
                                 Parcourez mes projets et réalisations
                             </Text>
-                            <HStack color="gray.400" >
-                                <ChakraLink as="span" fontSize="md" color="orange.fg" >
+                            <HStack >
+                                <ChakraLink as="span" fontSize="md" >
                                     <a target="_blank" href="/portefolio/documents/output.pdf">
                                         View my CV
                                     </a>
@@ -51,7 +51,19 @@ const AboutSection = () => {
                         <GridItem colSpan={2}><Heading lineHeight={2} textAlign="left" as="h2" fontSize="sm"  >Bio</Heading></GridItem>
                         <GridItem colSpan={10} >
                             <Stack>
-                                <Text color="gray.400" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</Text>
+                                <Text>Toujours partant pour un challenge ! J’ai travaillé pour diverses entreprises,
+                                    entre start‑up, PME et grands groupes. Lors de ma première expérience, j’ai eu
+                                    l’opportunité d’accompagner un entrepôt de la grande distribution dans sa transition
+                                    numérique, en étant à l’écoute des besoins de l’entreprise et en leur apportant mon
+                                    savoir‑faire en qualité de responsable informatique. À partir de là, animé par
+                                    le développement, j’ai décidé de devenir développeur, tout en choisissant des postes
+                                    qui me permettent de garder un lien avec l’humain. Enfin, je me suis tourné
+                                    vers l’enseignement, où j’ai accompagné plus de 200 élèves à devenir de futurs
+                                    développeurs, en leur transmettant la passion que j’éprouve pour ce domaine.
+                                    J’ai également piloté plus de 30 projets étudiants en tant que chef de projet,
+                                    dont je suis fier de pouvoir dire que la plupart sont de belles réussites.</Text>
+                                <Text>Je suis persuadé que le lien entre l'humain et le numérique est étroit, et qu'il est important de le conserver.</Text>
+                                <Text>En dehors du travail, j'aime faire de la musique, de la boxe anglaise, et un peu de peinture.</Text>
                                 <HStack maxW={300} wrap="wrap" >
                                     <Tag.Root rounded="full" >
                                         <Tag.Label>SQL</Tag.Label>

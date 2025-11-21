@@ -5,7 +5,7 @@ const MicroMarketSimulator = () => {
     return (
         <PageLayout caption="/portefolio/caption2.jpg" pageName="Micromarket Simulator">
             <Heading >Project overview</Heading>
-            <Text color="gray.200" fontWeight="light">C'est un jeu inspiré de supermarket simulator, réalisé en 3D et avec React. Voila...</Text>
+            <Text fontWeight="light">C'est un jeu inspiré de supermarket simulator, réalisé en 3D et avec React. Voila...</Text>
         </PageLayout>
     )
 }

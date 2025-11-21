@@ -8,7 +8,7 @@ const PageLayout: React.FC<{ caption: string, pageName: string, children: ReactN
         <>
             <Box position="relative">
                 <Image position="absolute" h={300} w="full" zIndex={-1} src={caption} />
-                <Box position="absolute" backdropFilter="blur(3px)" bgGradient="to-b" gradientFrom="#1115" gradientTo="#111" h={300} w="full" zIndex={-1} />
+                <Box position="absolute" backdropFilter="blur(3px)" bgGradient="to-b" gradientFrom={{ base: "#FFF5", _dark: "#1115" }} gradientTo={{ base: "white", _dark: "#111" }} h={300} w="full" zIndex={-1} />
                 <Container zIndex={2}>
                     <FadeInWrapper>
                         <Center p={32}>
@@ -27,10 +27,10 @@ const PageLayout: React.FC<{ caption: string, pageName: string, children: ReactN
                                             <FiArrowLeft />
                                         </IconButton>
                                     </Drawer.CloseTrigger>
-                                    <Heading lineHeight={1} fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }} fontWeight="normal" color="gray.200"  >{pageName}</Heading>
+                                    <Heading lineHeight={1} fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }} fontWeight="normal"   >{pageName}</Heading>
 
                                 </HStack>
-                                <Heading fontSize="xl" fontWeight="normal" color="gray.500" >React Three Fiber | Game</Heading>
+                                <Heading fontSize="xl" fontWeight="normal"  >React Three Fiber | Game</Heading>
                             </Stack>
                         </Center>
                     </FadeInWrapper>
