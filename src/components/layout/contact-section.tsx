@@ -98,13 +98,13 @@ const ContactSection = () => {
                     <ShaderCanvas />
                 </Box>
 
-                <Box backgroundColor="#09090b" pt={24} id="contact" maxW="md" mx="auto" p={6} borderWidth={1} borderRadius="lg">
+                <Box backgroundColor={{ base: "white", _dark: "#09090b" }} pt={24} id="contact" maxW="md" mx="auto" p={6} borderWidth={1} borderRadius="lg">
                     <Stack gap={4} mt={18} mb={10}>
                         <HStack align="end">
                             <Heading fontSize={{ base: "3xl", md: "5xl" }} >Contact</Heading>
                             <Box backgroundColor="orange.fg" w={3} h={3} rounded="full" />
                         </HStack>
-                        <Text color="gray.400">
+                        <Text>
                             N'hésitez pas à me laisser un beau message
                         </Text>
                     </Stack>
@@ -156,13 +156,13 @@ const ContactSection = () => {
 
 
 
-                            <Button variant="outline" color="orange.fg" type="submit" width="full">
+                            <Button variant="outline" type="submit" width="full">
                                 Envoyer
                             </Button>
                         </Stack>
                     </form>
                 </Box>
-                <Text fontSize="xs" color="gray" pb={4} pt={24} textAlign="center">
+                <Text fontSize="xs" pb={4} pt={24} textAlign="center">
                     Copyright © {today.getFullYear()} Théau Nicolas. All rights reserved.
                 </Text>
             </Container>
