@@ -3,7 +3,7 @@ import { Heading, Image, Link, Stack, Text } from "@chakra-ui/react"
 
 const VRHeadsetPage = () => {
     return (
-        <PageLayout caption="/portefolio/vr_caption.jpg" pageName="Casque VR" description="Un casque VR pour 30€" tags={["3D", "VR", "Unreal Engine", "C#", "Arduino"]}>
+        <PageLayout caption="/portfolio/vr_caption.jpg" pageName="Casque VR" description="Un casque VR pour 30€" tags={["3D", "VR", "Unreal Engine", "C#", "Arduino"]}>
             <Stack>
                 <Heading>Le projet</Heading>
                 <Text>Qui n’a jamais rêvé de créer son propre casque de réalité virtuelle ? Pour ma part, j’y ai longtemps pensé. À la fin de ma licence professionnelle, j’ai proposé comme projet de fin d’études de m’acharner à fabriquer un casque VR fonctionnel, avec un budget de 30 €. C’était en 2016 ; le marché de la VR était alors assez dynamique, mais les solutions disponibles étaient soit trop chères, soit peu efficaces.</Text>
@@ -41,7 +41,7 @@ const VRHeadsetPage = () => {
                 <Heading>La solution</Heading>
                 <Text>Nous disposions d’un accéléromètre, qui nous fournit des données sur l’accélération du casque dans l’espace. Même lorsqu’il est très coûteux, l’accéléromètre reste un composant très sensible aux phénomènes extérieurs ; il est donc peu précis sur de courtes durées et ne peut pas être exploité pour récupérer des données de rotation en temps réel. En revanche, contrairement au gyroscope, il est fiable sur le long terme : il ne dérive pas.</Text>
                 <Text>Pour simplifier, si le gyroscope dérive, nous pouvons utiliser l’accéléromètre pour déterminer l’écart entre la position 0 réelle et celle actuellement indiquée par le gyroscope. En appliquant ce principe à chaque intervalle de temps, on obtient un filtre qui corrige définitivement le drift du gyroscope !</Text>
-                <Image src="/portefolio/VR_gyrodrift.png" />
+                <Image src="/portfolio/VR_gyrodrift.png" />
             </Stack>
 
             <Stack>
@@ -50,13 +50,13 @@ const VRHeadsetPage = () => {
                 <Text>Bien sûr, il nécessite encore de nombreuses améliorations, mais la qualité était comparable à celle d’un Oculus Rift de l’époque, et tout cela pour seulement 30 €.</Text>
                 <Text>C’est l’un des projets dont je suis le plus fier à ce jour.</Text>
 
-                <Image src="/portefolio/VR_world1.png" />
-                <Image src="/portefolio/VR_world2.png" />
+                <Image src="/portfolio/VR_world1.png" />
+                <Image src="/portfolio/VR_world2.png" />
             </Stack>
 
             <Stack my={8}>
                 <Heading>Resources</Heading>
-                <Link target="_blank" href="/portefolio/documents/VR-CR.pdf">Compte rendu du projet</Link>
+                <Link target="_blank" href="/portfolio/documents/VR-CR.pdf">Compte rendu du projet</Link>
             </Stack>
         </PageLayout>
 

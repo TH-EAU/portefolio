@@ -36,7 +36,7 @@ const HeroSection = () => {
                             <ScrollLink to="welcome" duration={500} offset={-80} smooth>
                                 <HStack>
                                     <Avatar.Root size="xl">
-                                        <Avatar.Image src="/portefolio/profile.png" />
+                                        <Avatar.Image src="/portfolio/profile.png" />
                                         <Avatar.Fallback name="Théau Nicolas" />
                                     </Avatar.Root>
                                     <Heading fontSize="xl" color="white" fontWeight="light">Théau Nicolas</Heading>
@@ -88,7 +88,7 @@ const HeroSection = () => {
                         <Center pb={4}>
                             <HStack>
                                 <Avatar.Root size="xl">
-                                    <Avatar.Image src="/portefolio/profile.jpeg" />
+                                    <Avatar.Image src="/portfolio/profile.jpeg" />
                                     <Avatar.Fallback name="Théau Nicolas" />
                                 </Avatar.Root>
                                 <Heading fontSize="xl" color="white" fontWeight="light">Théau Nicolas</Heading>

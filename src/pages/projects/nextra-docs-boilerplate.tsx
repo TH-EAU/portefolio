@@ -3,7 +3,7 @@ import { Heading, Image, Stack, Text } from "@chakra-ui/react"
 
 const NextraDocsBoilerplatePage = () => {
     return (
-        <PageLayout pageName="Nextra docs boilerplate" description="Une boilerplate pour un Nextra en MDX sur github pages" tags={["Nextra", "Next", "TS"]} caption="/portefolio/ndb_caption.png" >
+        <PageLayout pageName="Nextra docs boilerplate" description="Une boilerplate pour un Nextra en MDX sur github pages" tags={["Nextra", "Next", "TS"]} caption="/portfolio/ndb_caption.png" >
             <Stack>
                 <Heading>Le projet</Heading>
                 <Text>Nextra est une excellente solution professionnelle et open‑source pour créer de la documentation. La fonctionnalité que j’apprécie le plus est le support du format MDX, un format hybride entre du Markdown et du JavaScript, qui permet d’intégrer des composants React dans des pages écrites en Markdown !</Text>
@@ -29,7 +29,7 @@ const NextraDocsBoilerplatePage = () => {
                 <Text>- Une refonte du système de routing (soit en réalisant des correspondances manuelles, ce que je fais déjà, soit en revenant à l’ancien système de routing, peut‑être plus adapté).</Text>
                 <Text>- Une bibliothèque de composants prête à l’emploi et extensible sous forme d’alias Obsidian, qui permettrait de rester dans le flux Obsidian sans devoir constamment basculer entre VS Code et Obsidian. Il faudrait également créer un mécanisme qui ajoute automatiquement les dépendances dans le fichier MDX lors de l’appel de l’alias.</Text>
             </Stack>
-            <Image src="/portefolio/ndb_exemple.png" />
+            <Image src="/portfolio/ndb_exemple.png" />
         </PageLayout>
     )
 }

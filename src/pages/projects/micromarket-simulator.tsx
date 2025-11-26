@@ -3,7 +3,7 @@ import { Text, Heading, Image } from "@chakra-ui/react"
 
 const MicroMarketSimulator = () => {
     return (
-        <PageLayout caption="/portefolio/micro_complete.png" pageName="Micromarket Simulator" description="React Three Fiber | Game" tags={["En cours", "React", "R3F"]}>
+        <PageLayout caption="/portfolio/micro_complete.png" pageName="Micromarket Simulator" description="React Three Fiber | Game" tags={["En cours", "React", "R3F"]}>
             <Heading >Project overview</Heading>
             <Text fontWeight="light">Avez-vous déjà rêvé d'ouvrir votre propre mini marché ? Voici le jeux de vos rêves.</Text>
             <Text>
@@ -14,10 +14,10 @@ const MicroMarketSimulator = () => {
             </Text>
 
             <Heading as="h3">Une interface pour acheter les fournitures et les consommables</Heading>
-            <Image src="/portefolio/micro_shop.png" />
-            <Image src="/portefolio/micro_cart.png" />
-            <Image src="/portefolio/micro_conso.png" />
-            <Image src="/portefolio/micro_complete.png" />
+            <Image src="/portfolio/micro_shop.png" />
+            <Image src="/portfolio/micro_cart.png" />
+            <Image src="/portfolio/micro_conso.png" />
+            <Image src="/portfolio/micro_complete.png" />
         </PageLayout>
     )
 }

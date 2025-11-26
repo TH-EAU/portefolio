@@ -37,7 +37,7 @@ const AboutSection = () => {
                             </Text>
                             <HStack >
                                 <ChakraLink as="span" fontSize="xs" >
-                                    <a target="_blank" href="/portefolio/documents/CV_Théau_NICOLAS.pdf">
+                                    <a target="_blank" href="/portfolio/documents/CV_Théau_NICOLAS.pdf">
                                         Voir mon CV
                                     </a>
                                 </ChakraLink>
@@ -126,7 +126,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/portefolio/esiea.png" />
+                                            <Image src="/portfolio/esiea.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -143,7 +143,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/portefolio/lpl.png" />
+                                            <Image src="/portfolio/lpl.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -160,7 +160,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/portefolio/power.png" />
+                                            <Image src="/portfolio/power.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>
@@ -177,7 +177,7 @@ const AboutSection = () => {
                                     <Timeline.Connector>
                                         <Timeline.Separator />
                                         <Timeline.Indicator>
-                                            <Image src="/portefolio/psl.png" />
+                                            <Image src="/portfolio/psl.png" />
                                         </Timeline.Indicator>
                                     </Timeline.Connector>
                                     <Timeline.Content>

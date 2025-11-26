@@ -20,9 +20,9 @@ const WelcomeSection = () => {
                     <Box w={250} h="full">
                         <HoverCardWrapper>
                             <Box border="1px solid #222" w={250} position='relative' backgroundColor="black" p={2}>
-                                <Image top={3} left={3} zIndex={1} position="absolute" mixBlendMode="difference" w={5} src="/portefolio/tn_white.png" />
-                                <Image position="absolute" zIndex={2} src="/portefolio/dirt.jpg" w="full" h="full" blendMode="overlay" opacity={.05} transition="1s" _hover={{ opacity: .5 }} />
-                                <Image boxShadow="md" filter='saturate(0)' zIndex={0} rounded="md" src="/portefolio/profile.png" w="full" h="full" align="right" _hover={{ mixBlendMode: "difference" }} />
+                                <Image top={3} left={3} zIndex={1} position="absolute" mixBlendMode="difference" w={5} src="/portfolio/tn_white.png" />
+                                <Image position="absolute" zIndex={2} src="/portfolio/dirt.jpg" w="full" h="full" blendMode="overlay" opacity={.05} transition="1s" _hover={{ opacity: .5 }} />
+                                <Image boxShadow="md" filter='saturate(0)' zIndex={0} rounded="md" src="/portfolio/profile.png" w="full" h="full" align="right" _hover={{ mixBlendMode: "difference" }} />
 
                             </Box>
                         </HoverCardWrapper>

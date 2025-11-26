@@ -11,7 +11,7 @@ const workList: Work[] = [
     {
         name: "Casque VR",
         slug: "vr-headset",
-        caption: "/portefolio/vr_caption.jpg",
+        caption: "/portfolio/vr_caption.jpg",
         overview: "Conception d'un casque de réalité virtuel",
         captionAlt: "Photo de <a href='https://unsplash.com/fr/@jamesyarema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>James Yarema</a> sur <a href='https://unsplash.com/fr/photos/appareil-numerique-bleu-et-noir-npTT9rD8wd4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>",
         tags: ["VR", "3D", "C#", "Unreal Engine"],
@@ -21,7 +21,7 @@ const workList: Work[] = [
     {
         name: "Obsidian Storage Manager",
         slug: "obsidian-storage-manager",
-        caption: "/portefolio/osm_caption.jpg",
+        caption: "/portfolio/osm_caption.jpg",
         overview: "Plugin obsidian pour intégrer des bases de données",
         captionAlt: 'Photo de <a href="https://unsplash.com/fr/@resourcedatabase?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Resource Database</a> sur <a href="https://unsplash.com/fr/photos/un-cube-blanc-qui-flotte-dans-les-airs-mpXAVvxfxDg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
         status: ProjectStatus.PENDING,
@@ -31,7 +31,7 @@ const workList: Work[] = [
     {
         name: "Nextra Docs Boilerplate",
         slug: "nextra-docs-boilerplate",
-        caption: "/portefolio/ndb_caption.png",
+        caption: "/portfolio/ndb_caption.png",
         overview: '',
         captionAlt: "capture d'écran de Nextra",
         status: ProjectStatus.PENDING,
@@ -41,7 +41,7 @@ const workList: Work[] = [
     {
         name: "SubnetSurfer",
         slug: "subnet-surfer",
-        caption: "/portefolio/subnet_surfer.png",
+        caption: "/portfolio/subnet_surfer.png",
         overview: "Utilitaire de calcul de masque de sous-réseaux",
         captionAlt: 'Photo de <a href="https://unsplash.com/fr/@rylo444?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryan Loughlin</a> sur <a href="https://unsplash.com/fr/photos/personne-surfant-au-coucher-du-soleil-HXqpJnLyHzg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
         status: ProjectStatus.FINISHED,
@@ -51,7 +51,7 @@ const workList: Work[] = [
     {
         name: "CSS Glasses",
         slug: "css-glasses",
-        caption: "/portefolio/css_glasses_caption.jpg",
+        caption: "/portfolio/css_glasses_caption.jpg",
         captionAlt: 'Photo de <a href="https://unsplash.com/fr/@luminos_film?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luminos film</a> sur <a href="https://unsplash.com/fr/photos/une-paire-de-lunettes-v0NvWynzF3I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
         overview: 'Extension chrome pour lire le css',
         status: ProjectStatus.FINISHED,
@@ -61,7 +61,7 @@ const workList: Work[] = [
     {
         name: "MicromarketSimulator",
         slug: "micromarket-simulator",
-        caption: "/portefolio/micro_complete.png",
+        caption: "/portfolio/micro_complete.png",
         captionAlt: "Capture d'écran de mircomarket simulator",
         overview: "Un mini jeu en React-Three-Fiber",
         tags: ["game", "3D", "WebGL"],
